@@ -1,0 +1,366 @@
+:root {
+
+    --bg-dark: #000;
+    --bg-light: #FFF;
+    --font-dark: #000;
+    --font-light: #FFF;
+
+    --bg-primary: #00688B;
+    --bg-primary2: #009ACD;
+    --bg-primary3: #00BFFF;
+    --bg-secondary: #01014d;
+    --bg-info: #727272;
+    --shadow: #555555;
+
+    --alert-success: #00FF00;
+    --alert-info: #0000FF;
+    --alert-danger: #FF0000;
+    --alert-warning: #f85e06;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 990px;
+    margin: 0px auto;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    flex-direction: column;
+}
+
+
+/* ###################################################################################### */
+
+header {
+    height: 100px;
+}
+
+.navigation {
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-navigation {
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-navigation a {
+    color: var(--bg-info);
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.logo-navigation a:hover {
+    color: var(--font-dark);
+}
+
+.menu-navigation ul, .menu-navigation li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu-navigation ul {
+    display: flex;
+}
+
+.menu-navigation a {
+    display: block;
+    color: var(--bg-info);
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 15px;
+}
+
+.menu-navigation .active a, .menu-navigation a:hover {
+    background-color: var(--bg-primary);
+    color: var(--font-light);
+}
+
+.logo-navigation img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+
+/* ###################################################################################### */
+
+#banner {
+    display: flex;
+    background-image: url('../img/banner.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 670px;
+}
+
+
+.banner-headline {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner-headline .title, .banner-headline .subtitle {
+    max-width: 400px;
+    color: var(--font-light);
+}
+
+.banner-headline .title {
+    font-size: 70px;
+    text-shadow: 2px 2px 0px var(--shadow);
+    font-weight: 700;
+}
+
+.banner-headline .subtitle {
+    font-size: 3epx;
+    font-weight: 400;
+    margin-top: 30px;
+}
+
+.banner-options {
+    height: 210px;
+    display: flex;
+}
+
+.banner1, .banner2, .banner3 {
+    flex: 1;
+    color: var(--font-light);
+    padding: 20px;
+}
+
+.banner1 {
+    background-color: var(--bg-primary3);
+}
+
+.banner2 {
+    background-color: var(--bg-primary2);;
+}
+
+.banner3 {
+    background-color: var(--bg-primary);;
+}
+
+.banner-title {
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.banner-description {
+    margin: 20px 0;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.banner-options a {
+    display: inline-block;
+    border: 1px solid var(--font-light);
+    border-radius: 5px;
+    background-color: var(--bg-primary);
+    color: var(--font-light);
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+    font-size: 14px;
+}
+
+.banner-options a:hover {
+    background-color: var(--bg-info);
+    color: var(--font-light);
+}
+
+.banner-opentime {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid var(--bg-primary2);
+    font-size: 14px;
+}
+
+
+/* ###################################################################################### */
+
+#geral {
+    display: flex;
+    justify-content: space-between;
+}
+
+#geral main {
+    flex: 2;
+}
+
+#geral aside {
+    flex: 1;
+}
+
+.widget-title {
+    margin: 30px 0 20px 0;
+}
+
+.widget-title-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--bg-primary)
+}
+
+.widget-title-bar {
+    width: 50px;
+    height: 2px;
+    background-color: var(--bg-primary3);
+    margin-top: 10px;
+}
+
+.widget-body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.widget-body-box {
+    width: 130px;
+    height: 130px;
+    background-color:var(--bg-primary);
+    margin: 0 10px 10px 0;
+}
+
+.widget-description {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.widget-contats {
+    display: block;
+    font-size: 15px;
+}
+
+.phones,
+.email,
+.page {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--bg-primary);
+    padding: 10px 0;
+}
+
+.phones {
+    border-top: 1px solid var(--bg-primary);
+}
+
+.widget-contats img {
+    height: 20px;
+    width: 20px;
+    background-color: var(--bg-dark);
+    margin-right: 15px;
+}
+
+.widget-news {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.widget-news article {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 20px;
+}
+
+.widget-news article .news-data {
+    display: flex;
+}
+
+.widget-news article a {
+    text-decoration: none;
+}
+
+.news-posted-at, .news-comments {
+    color: var(--font-light);
+    padding: 8px;
+    font-size: 12px;
+}
+
+.news-posted-at {
+    background-color: var(--bg-primary);
+}
+
+.news-comments {
+    background-color: var(--bg-primary3);
+    margin-left: 3px;
+}
+
+.news-image img {
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+}
+
+.news-title {
+    margin: 15px 0;
+    font-size: 25px;
+    color: var(--bg-primary);
+}
+
+.news-resume {
+    font-size: 14px;
+    color: var(--bg-secondary);
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+
+img.img-depto{
+    object-fit: cover;  
+    width: 130px;
+    height: 130px;
+  }
+
+
+/* ###################################################################################### */
+
+footer {
+    background-color: var(--bg-dark);
+    min-height: 100px;
+}
+
+.footer-options {
+    background-color: blue;
+    height: 120px;
+    display: flex;
+}
+
+.footer-info {
+    background-color: red;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
