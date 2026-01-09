@@ -1,204 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clinica Medica</title>
-    <link rel="stylesheet" href="./static/css/styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-content="site.title"></title>
+
+    <link rel="stylesheet" href="./css/styles.css" />
 </head>
+
 <body>
-    <div class="">
-        <header class="navigation">
-            <div class="nav-desktop container">
-                <div class="logo-navigation">
-                    <img src="./static/img/logo.png" alt="Logo">
-                    <a href="">CLINIC MEDICAL</a>
-                </div>
-                <nav class="menu-navigation">
-                    <ul>
-                        <li class="active"><a href="">Home</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Blog</a></li>
-                        <li><a href="">Gallery</a></li>
-                        <li><a href="">Contact</a></li>
-                    </ul>
-                </nav>
+    <header class="navigation ">
+        <div class="nav-desktop container">
+            <div class="logo-navigation">
+                <img id="logo" alt="Logo" />
+                <a href="#" data-content="site.name"></a>
             </div>
-        </header>
 
-        <section id="banner">
-            <div class="container flex-between column">
-                <div class="banner-headline">
-                    <h1 class="title">Top notch experience</h1>
-                    <h2 class="subtitle">Clinic Medical is a responsive template perfect for all screen sizes.</h2>
-                </div>
-                <div class="banner-options">
-                    <div class="banner1">
-                        <div class="banner-title">Emergency Case</div>
-                        <div class="banner-description">Lorem Ipsum more recently with desktop publishing software like including versions of Lorem Ipsum.</div>
-                        <a href="">Read more</a>
-                    </div>
-                    <div class="banner2">
-                        <div class="banner-title">Doctors Timetable</div>
-                        <div class="banner-description">It is a long established will be distracted by the content of a page when looking at its layout. </div>
-                        <a href="">Read more</a>
-                    </div>
-                    <div class="banner3">
-                        <div class="banner-title">Opening Hours</div>
-                        <div class="banner-opentime">Monday-Friday
-                            <div>8:00 - 17:00</div>
-                        </div>
-                        <div class="banner-opentime">Saturday
-                            <div>9:30 - 17:30</div>
-                        </div>
-                        <div class="banner-opentime">Sunday
-                            <div>9:30 - 15:00</div>
-                        </div>                 
-                    </div>
-                </div>                
+            <nav class="menu-navigation">
+                <ul id="menu"></ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="banner">
+        <div class="container flex-between column">
+            <div class="banner-headline">
+                <h1 class="title" data-content="banner.title"></h1>
+                <h2 class="subtitle" data-content="banner.subtitle"></h2>
             </div>
-        </section>
 
-        <section id="geral" class="container">
-            <main class="">
-                <div class="widget">
-                    <div class="widget-title">
-                        <div class="widget-title-text">Latest News</div>
-                        <div class="widget-title-bar"></div>
-                    </div>
-                    <div class="widget-news">
-                        <article>
-                            <a href="">
-                                <div class="news-data">
-                                    <div class="news-posted-at">12 AGO 22</div>
-                                    <div class="news-comments">2</div>
-                                </div>
-                                <div class="news-image">
-                                    <img src="./static/img/image1.jpg" alt="">
-                                </div>
-                                <div class="news-title">
-                                    News Title Lorem Ypsom
-                                </div>
-                                <div class="news-resume">
-                                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
-                                </div>
-                            </a>
-                        </article>
+            <div class="banner-options" id="banner-options"></div>
+        </div>
+    </section>
 
-                        <article>
-                            <a href="">
-                                <div class="news-data">
-                                    <div class="news-posted-at">12 AGO 22</div>
-                                    <div class="news-comments">2</div>
-                                </div>
-                                <div class="news-image">
-                                    <img src="./static/img/image2.jpg" alt="">
-                                </div>
-                                <div class="news-title">
-                                    News Title Lorem Ypsom
-                                </div>
-                                <div class="news-resume">
-                                    It is a long established fact that a reader will be distracted. It is a long established fact that a reader will be distracted. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
-                                </div>
-                            </a>
-                        </article>
-                        
-                        <article>
-                            <a href="">
-                                <div class="news-data">
-                                    <div class="news-posted-at">12 AGO 22</div>
-                                    <div class="news-comments">2</div>
-                                </div>
-                                <div class="news-image">
-                                    <img src="./static/img/image3.jpg" alt="">
-                                </div>
-                                <div class="news-title">
-                                    News Title Lorem Ypsom
-                                </div>
-                                <div class="news-resume">
-                                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less. The point of using Lorem Ipsum is that it has a more-or-less. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
-                                </div>
-                            </a>
-                        </article>
+    <section id="geral" class="container">
+        <main id="news"></main>
 
-                        <article>
-                            <a href="">
-                                <div class="news-data">
-                                    <div class="news-posted-at">12 AGO 22</div>
-                                    <div class="news-comments">2</div>
-                                </div>
-                                <div class="news-image">
-                                    <img src="./static/img/image4.jpg" alt="">
-                                </div>
-                                <div class="news-title">
-                                    News Title Lorem Ypsom
-                                </div>
-                                <div class="news-resume">
-                                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
-                                </div>
-                            </a>
-                        </article>
-                    </div>
-                </div>
-            </main>
-            <aside class="">
-                <div class="widget">
-                    <div class="widget-title">
-                        <div class="widget-title-text">Departaments</div>
-                        <div class="widget-title-bar"></div>
-                    </div>
-                    <div class="widget-body">
-                        <div class="widget-body-box"><img src="./static/img/image5.jpg" alt="" class="img-depto"></div>
-                        <div class="widget-body-box"><img src="./static/img/image6.jpg" alt="" class="img-depto"></div>
-                        <div class="widget-body-box"><img src="./static/img/image7.jpg" alt="" class="img-depto"></div>
-                        <div class="widget-body-box"><img src="./static/img/image8.jpg" alt="" class="img-depto"></div>
-                        <div class="widget-body-box"><img src="./static/img/image9.jpg" alt="" class="img-depto"></div>
-                        <div class="widget-body-box"><img src="./static/img/image0.jpg" alt="" class="img-depto"></div>
-                    </div>
-                </div>
-                <div class="widget">
-                    <div class="widget-title">
-                        <div class="widget-title-text">Make an Appointment</div>
-                        <div class="widget-title-bar"></div>
-                    </div>
-                    <div class="widget-body">
-                        <div class="widget-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum quas voluptates velit corporis error necessitatibus laudantium delectus.</div>
-                    </div>
-                    <div class="widget-contats">
-                        <address>
-                            <div class="contats-phones">
-                                <div class="phones">
-                                    <img src="./static/img/logo.png" alt="logo-phone">
-                                    <p>by phone: <strong>1-800-643-4300</strong></p>
-                                </div>
-                            </div>
-                            <div class="contats-email">
-                                <div class="email">
-                                    <img src="./static/img/logo.png" alt="logo-email">
-                                    <p>by e-mail: <a href="mailto:google@gmail.com">google@gmail.com</a></p>
-                                </div>
-                            </div>
-                            <div class="contats-page">
-                                <div class="page">
-                                    <img src="./static/img/logo.png" alt="logo-page">
-                                    <p>or <strong>fill on the form</strong> on our contact page</p>
-                                </div>
-                            </div>
-                        </address>
-                    </div>
-                </div>
-            </aside>
-        </section>
+        <aside id="sidebar"></aside>
+    </section>
 
-        <footer>
-            <div class="container">
-                <div class="container flex-between column">
-                    <div class="footer-options">...</div>
-                    <div class="footer-info">...</div>
-                </div>
-            </div>
-        </footer>
-    </div>
+    <footer>
+        <div class="container footer-info">
+            <p data-content="footer.text"></p>
+        </div>
+    </footer>
+
+    <script src="./js/main.js" defer></script>
 </body>
+
 </html>

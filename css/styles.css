@@ -1,0 +1,449 @@
+/* ==========================================================================
+   ROOT VARIABLES (THEME / CLINIC COLORS)
+   ========================================================================== */
+
+:root {
+    --dark: #000;
+    --light: #000;
+    --primary: #000;
+    --primary2: #000;
+    --primary3: #000;
+    --secondary: #000;
+    --info: #000;
+    --shadow: #000;
+}
+
+/* ==========================================================================
+   RESET & BASE
+   ========================================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    transition: all .3s ease;
+}
+
+/* ==========================================================================
+   HELPERS
+   ========================================================================== */
+
+.container {
+    max-width: 990px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    flex-direction: column;
+}
+
+/* ==========================================================================
+   HEADER / NAVIGATION
+   ========================================================================== */
+
+header {
+    height: 120px;
+    background: var(--light);
+    color: var(--info);
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.nav-desktop {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-navigation {
+    display: flex;
+    align-items: center;
+}
+
+.logo-navigation img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.logo-navigation a {
+    text-decoration: none;
+    color: var(--info);
+    font-size: 20px;
+}
+
+.logo-navigation a:hover {
+    color: var(--dark);
+}
+
+.menu-navigation ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu-navigation a {
+    padding: 15px;
+    text-decoration: none;
+    color: var(--secondary);
+    text-transform: uppercase;
+}
+
+.menu-navigation .active a,
+.menu-navigation a:hover {
+    background: var(--primary);
+    color: var(--light);
+}
+
+/* ==========================================================================
+   BANNER
+   ========================================================================== */
+
+#banner {
+    position: relative;
+    background: url('../img/banner.jpg') center/cover no-repeat;
+    height: 670px;
+    display: flex;
+    overflow: hidden;
+}
+
+#banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+    z-index: 1;
+}
+
+#banner .container {
+    position: relative;
+    z-index: 2;
+}
+
+.banner-headline {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner-headline .title {
+    font-size: 70px;
+    font-weight: 700;
+    color: var(--light);
+    text-shadow: 2px 2px 0px var(--shadow);
+}
+
+.banner-headline .subtitle {
+    color: var(--light);
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: 30px;
+    max-width: 400px;
+}
+
+.banner-options {
+    display: flex;
+    height: 210px;
+}
+
+/* Banner Cards */
+.banner1, .banner2, .banner3 {
+    flex: 1;
+    padding: 20px;
+    color: var(--light);
+    transition: transform .3s ease;
+}
+
+.banner1 { background: var(--primary3); }
+.banner2 { background: var(--primary2); }
+.banner3 { background: var(--primary); }
+
+.banner1:hover,
+.banner2:hover,
+.banner3:hover {
+    transform: translateY(-5px);
+}
+
+.banner-title {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.banner-description {
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.banner-options a {
+    display: inline-block;
+    padding: 6px 12px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    color: var(--light);
+    text-decoration: none;
+}
+
+.banner-options a:hover {
+    background: var(--light);
+    color: var(--primary);
+}
+
+.banner-opentime {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+    border-bottom: 1px solid rgba(255,255,255,.4);
+    padding-bottom: 5px;
+}
+
+/* ==========================================================================
+   MAIN / ASIDE
+   ========================================================================== */
+
+#geral {
+    display: flex;
+    gap: 30px;
+}
+
+#geral main { flex: 2; }
+#geral aside { flex: 1; }
+
+/* ==========================================================================
+   WIDGETS
+   ========================================================================== */
+
+.widget-title {
+    margin: 30px 0 20px;
+}
+
+.widget-title-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.widget-title-bar {
+    width: 50px;
+    height: 2px;
+    background: var(--primary3);
+    margin-top: 8px;
+}
+
+/* ==========================================================================
+   NEWS
+   ========================================================================== */
+
+.widget-news {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.widget-news article {
+    flex: 1;
+    min-width: 300px;
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.widget-news article:hover {
+    transform: translateY(-6px);
+}
+
+.widget-news a {
+    text-decoration: none;
+}
+
+.news-data {
+    display: flex;
+}
+
+.news-posted-at,
+.news-comments {
+    padding: 8px;
+    font-size: 12px;
+    color: var(--light);
+}
+
+.news-posted-at { background: var(--primary); }
+.news-comments { background: var(--primary3); margin-left: 3px; }
+
+.news-image img {
+    margin-top: 15px;
+}
+
+.news-title {
+    margin: 15px 0;
+    font-size: 22px;
+    color: var(--primary);
+}
+
+.news-resume {
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--secondary);
+}
+
+/* ==========================================================================
+   SIDEBAR
+   ========================================================================== */
+
+.widget-body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.widget-body-box {
+    width: 130px;
+    height: 130px;
+}
+
+.img-depto {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease-in-out;
+}
+
+.img-depto:hover {
+    transform: scale(1.05);
+}
+
+.widget-description {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.widget-contacts p {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--primary);
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+
+footer {
+    background: var(--secondary);
+    color: var(--light);
+    margin-top: 40px;
+}
+
+.footer-info {
+    padding: 20px;
+    text-align: center;
+}
+
+/* ==========================================================================
+   RESPONSIVE (TABLET / MOBILE)
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+    .container {
+        width: 95%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    header {
+        height: auto;
+    }
+
+    .banner-headline .title {
+        margin-top: 30px;
+    }
+
+    .banner-headline .subtitle {
+        margin-bottom: 20px;
+    }
+
+    .nav-desktop {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-navigation {
+        margin-top: 12px;
+        margin-bottom: 10px;
+    }
+
+    .menu-navigation ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px 15px;
+        margin-bottom: 15px;
+    }
+
+    .menu-navigation a {
+        padding: 10px 5px;
+        font-size: 14px;
+    }
+
+    #banner {
+        height: auto;
+    }
+
+    .banner-options {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #geral {
+        flex-direction: column;
+    }
+
+    .widget-news {
+        flex-direction: column;
+    }
+
+    .widget-news article {
+        min-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .banner-headline .title {
+        font-size: 42px;
+    }
+
+    .banner-headline .subtitle {
+        font-size: 16px;
+    }
+
+    .widget-body-box {
+        width: 220px;
+        height: 220px;
+    }
+
+    .img-depto:hover {
+        transform: none;
+    }
+}

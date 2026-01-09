@@ -1,0 +1,115 @@
+{
+  "theme": {
+    "dark": "#000",
+    "light": "#FFF",
+    "primary": "#00688B",
+    "primary2": "#009ACD",
+    "primary3": "#00BFFF",
+    "secondary": "#01014d",
+    "info": "#727272",
+    "shadow": "#555555"
+  },
+  "site": {
+    "title": "Clinic Medical",
+    "name": "CLINIC MEDICAL",
+    "logo": "./img/logo.png"
+  },
+  "menu": [
+    "Home",
+    "About",
+    "Blog",
+    "Gallery",
+    "Contact"
+  ],
+  "banner": {
+    "title": "Top notch experience",
+    "subtitle": "Clinic Medical is a responsive template perfect for all screen sizes.",
+    "options": [
+      {
+        "title": "Emergency Case",
+        "text": "Lorem Ipsum more recently with desktop publishing software like including versions of Lorem Ipsum.",
+        "link": "#"
+      },
+      {
+        "title": "Doctors Timetable",
+        "text": "It is a long established will be distracted by the content of a page when looking at its layout.",
+        "link": "#"
+      },
+      {
+        "title": "Opening Hours",
+        "hours": [
+          {
+            "day": "Monday-Friday",
+            "time": "8:00 - 17:00"
+          },
+          {
+            "day": "Saturday",
+            "time": "9:30 - 17:30"
+          },
+          {
+            "day": "Sunday",
+            "time": "9:30 - 15:00"
+          }
+        ]
+      }
+    ]
+  },
+  "news": {
+    "title": "Latest News",
+    "items": [
+      {
+        "date": "05 JAN 26",
+        "comments": 2,
+        "image": "./img/image1.jpg",
+        "title": "A page when looking",
+        "resume": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+      },
+      {
+        "date": "06 JAN 26",
+        "comments": 10,
+        "image": "./img/image2.jpg",
+        "title": "News Title Lorem Ipsum",
+        "resume": "The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+      },
+      {
+        "date": "07 JAN 26",
+        "comments": 6,
+        "image": "./img/image3.jpg",
+        "title": "Normal distribution of letters",
+        "resume": "Will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+      },
+      {
+        "date": "08 JAN 26",
+        "comments": 4,
+        "image": "./img/image4.jpg",
+        "title": "Another Medical News",
+        "resume": "Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+      }
+    ]
+  },
+  "sidebar": {
+    "departments": {
+      "title": "Departments",
+      "images": [
+        "./img/image5.jpg",
+        "./img/image6.jpg",
+        "./img/image7.jpg",
+        "./img/image8.jpg",
+        "./img/image9.jpg",
+        "./img/image0.jpg"
+      ]
+    },
+    "appointment": {
+      "title": "Make an Appointment",
+      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum quas voluptates velit corporis error necessitatibus laudantium delectus.",
+      "contacts": {
+        "phone": "1-800-643-4300",
+        "email": "google@gmail.com",
+        "pageText": "fill on the form on our contact page"
+      }
+    }
+  },
+  "footer": {
+    "text": "© 2026 Clinic Medical. All rights reserved."
+  }
+}
