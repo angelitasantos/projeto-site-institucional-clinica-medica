@@ -53,6 +53,24 @@ a {
     flex-direction: column;
 }
 
+.page {
+    min-height: 600px;
+}
+
+.btn {
+    background: var(--primary);
+    color: #fff;
+    padding: 10px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background .3s ease;
+}
+
+.btn:hover {
+    background: var(--primary2);
+}
+
 /* ==========================================================================
    HEADER / NAVIGATION
    ========================================================================== */
@@ -343,6 +361,135 @@ header {
     align-items: center;
     padding: 10px 0;
     border-bottom: 1px solid var(--primary);
+}
+
+/* ==========================================================================
+   BLOG
+   ========================================================================== */
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.blog-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.08);
+    display: flex;
+    flex-direction: column;
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0,0,0,.15);
+}
+
+.blog-card h3 {
+    margin-bottom: 10px;
+    color: var(--primary);
+}
+
+.blog-card p {
+    flex: 1;
+    color: var(--info);
+    line-height: 1.5;
+}
+
+.blog-card .btn {
+    margin-top: 15px;
+    align-self: flex-start;
+}
+
+/* ==========================================================================
+   GALLERY
+   ========================================================================== */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 160px; /* tamanho fixo */
+    object-fit: cover;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0,0,0,.2);
+}
+
+/* ==========================================================================
+   MODAL
+   ========================================================================== */
+
+.modal {
+    position: fixed;
+    inset: 0;
+    z-index: 999;
+}
+
+.modal.hidden {
+    display: none;
+}
+
+.modal-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,.6);
+}
+
+.modal-content {
+    position: relative;
+    background: #fff;
+    max-width: 600px;
+    margin: 10vh auto;
+    padding: 30px;
+    border-radius: 8px;
+    z-index: 1;
+    animation: fadeUp .4s ease;
+}
+
+.modal-content h2 {
+    margin-bottom: 15px;
+    color: var(--primary);
+}
+
+.modal-content p {
+    line-height: 1.6;
+    color: var(--info);
+}
+
+.modal-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border: none;
+    background: none;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* ==========================================================================

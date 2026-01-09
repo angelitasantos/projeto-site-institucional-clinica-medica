@@ -14,7 +14,7 @@
         <div class="nav-desktop container">
             <div class="logo-navigation">
                 <img id="logo" alt="Logo" />
-                <a href="#" data-content="site.name"></a>
+                <a href="/" data-content="site.name"></a>
             </div>
 
             <nav class="menu-navigation">
@@ -23,21 +23,39 @@
         </div>
     </header>
 
-    <section id="banner">
-        <div class="container flex-between column">
-            <div class="banner-headline">
-                <h1 class="title" data-content="banner.title"></h1>
-                <h2 class="subtitle" data-content="banner.subtitle"></h2>
-            </div>
+    <section id="home" class="page">
+        <section id="banner">
+            <div class="container flex-between column">
+                <div class="banner-headline">
+                    <h1 class="title" data-content="banner.title"></h1>
+                    <h2 class="subtitle" data-content="banner.subtitle"></h2>
+                </div>
 
-            <div class="banner-options" id="banner-options"></div>
-        </div>
+                <div class="banner-options" id="banner-options"></div>
+            </div>
+        </section>
+
+        <section id="geral" class="container">
+            <main id="news"></main>
+
+            <aside id="sidebar"></aside>
+        </section>
     </section>
 
-    <section id="geral" class="container">
-        <main id="news"></main>
+    <section id="about" class="page container" hidden>
+        <div class="container"></div>
+    </section>
 
-        <aside id="sidebar"></aside>
+    <section id="blog" class="page container" hidden>
+        <div class="container"></div>
+    </section>
+
+    <section id="gallery" class="page container" hidden>
+        <div class="container"></div>
+    </section>
+
+    <section id="contact" class="page container" hidden>
+        <div class="container"></div>
     </section>
 
     <footer>
@@ -45,6 +63,20 @@
             <p data-content="footer.text"></p>
         </div>
     </footer>
+
+    <div id="post-modal" class="modal hidden">
+        <div class="modal-overlay"></div>
+
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <h2 id="modal-title"></h2>
+            <div id="modal-body"></div>
+            <div class="modal-footer" id="modal-footer"></div>
+        </div>
+    </div>
+
+    
+
 
     <script src="./js/main.js" defer></script>
 </body>

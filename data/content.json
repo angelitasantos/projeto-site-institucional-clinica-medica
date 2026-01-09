@@ -15,11 +15,11 @@
     "logo": "./img/logo.png"
   },
   "menu": [
-    "Home",
-    "About",
-    "Blog",
-    "Gallery",
-    "Contact"
+    { "label": "Home", "page": "home" },
+    { "label": "About", "page": "about" },
+    { "label": "Blog", "page": "blog" },
+    { "label": "Gallery", "page": "gallery" },
+    { "label": "Contact", "page": "contact" }
   ],
   "banner": {
     "title": "Top notch experience",
@@ -107,6 +107,108 @@
         "email": "google@gmail.com",
         "pageText": "fill on the form on our contact page"
       }
+    }
+  },
+  "pages": {
+    "about": {
+      "title": "About Us",
+      "content": [
+        "Clinic Medical is a modern health care center focused on patient experience.",
+        "Our team is composed of highly qualified professionals with years of experience."
+      ]
+    },
+
+    "blog": {
+      "title": "Blog",
+      "posts": [
+        {
+          "title": "How to take care of your health",
+          "excerpt": "Small daily habits can significantly improve your quality of life.",
+          "modal": {
+            "head": "How to take care of your health",
+            "body": [
+              "Maintaining good health starts with small daily habits.",
+              "Regular exercise, proper nutrition and mental balance are essential.",
+              "Consult your doctor regularly to prevent future problems."
+            ],
+            "footer": "Talk to our specialists to learn more."
+          }
+        },
+        {
+          "title": "How to take care of your health",
+          "excerpt": "Small daily habits can significantly improve your quality of life.",
+          "modal": {
+            "head": "How to take care of your health",
+            "body": [
+              "Maintaining good health starts with small daily habits.",
+              "Regular exercise, proper nutrition and mental balance are essential.",
+              "Consult your doctor regularly to prevent future problems."
+            ],
+            "footer": "Talk to our specialists to learn more."
+          }
+        },
+        {
+          "title": "How to take care of your health",
+          "excerpt": "Small daily habits can significantly improve your quality of life.",
+          "modal": {
+            "head": "How to take care of your health",
+            "body": [
+              "Maintaining good health starts with small daily habits.",
+              "Regular exercise, proper nutrition and mental balance are essential.",
+              "Consult your doctor regularly to prevent future problems."
+            ],
+            "footer": "Talk to our specialists to learn more."
+          }
+        },
+        {
+          "title": "How to take care of your health",
+          "excerpt": "Small daily habits can significantly improve your quality of life.",
+          "modal": {
+            "head": "How to take care of your health",
+            "body": [
+              "Maintaining good health starts with small daily habits.",
+              "Regular exercise, proper nutrition and mental balance are essential.",
+              "Consult your doctor regularly to prevent future problems."
+            ],
+            "footer": "Talk to our specialists to learn more."
+          }
+        },
+        {
+          "title": "The importance of regular checkups",
+          "excerpt": "Prevention is always better than treatment.",
+          "modal": {
+            "head": "The importance of regular checkups",
+            "body": [
+              "Regular exams help identify diseases early.",
+              "Early diagnosis increases treatment success rates."
+            ],
+            "footer": "Schedule your appointment today."
+          }
+        }
+      ]
+    },
+
+    "gallery": {
+      "title": "Gallery",
+      "images": [
+        "./img/image0.jpg",
+        "./img/image1.jpg",
+        "./img/image2.jpg",
+        "./img/image3.jpg",
+        "./img/image4.jpg",
+        "./img/image5.jpg",
+        "./img/image6.jpg",
+        "./img/image7.jpg",
+        "./img/image8.jpg",
+        "./img/image9.jpg"
+      ]
+    },
+
+    "contact": {
+      "title": "Contact",
+      "description": "Get in touch with us using the information below.",
+      "email": "contact@clinicmedical.com",
+      "phone": "1-800-643-4300"
     }
   },
   "footer": {
